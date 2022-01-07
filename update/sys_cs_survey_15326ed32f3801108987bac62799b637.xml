@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_survey">
+    <sys_cs_survey action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <condition_mode>simple</condition_mode>
+        <condition_script><![CDATA[(function executeCondition(/* glide record */ current) {  
+	// customize condition logic here, return true or false  
+	return false;
+})(current);]]></condition_script>
+        <name>WWT Pre Chat</name>
+        <order>100</order>
+        <queue/>
+        <req_ended>false</req_ended>
+        <show_summary>true</show_summary>
+        <survey display_value="ESC Pre-chat">0eca60a9534000102905ddeeff7b12d0</survey>
+        <sys_class_name>sys_cs_survey</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-07 16:39:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>15326ed32f3801108987bac62799b637</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WWT Pre Chat</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cs_survey_15326ed32f3801108987bac62799b637</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-07 16:39:36</sys_updated_on>
+        <type>prechat</type>
+    </sys_cs_survey>
+</record_update>

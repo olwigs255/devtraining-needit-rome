@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>Careers</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.36",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "74f43cca1368437783584bef6995484e": {
+          "id": "74f43cca1368437783584bef6995484e",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Happy to hear you're interested in working with us! Let me see how I can help."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "27f0003913944cb1aa4baef97d108dcb": {
+          "id": "27f0003913944cb1aa4baef97d108dcb",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Best of luck with your search!"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "a3e4d047882e4fadb2402c8f9f4928a7": {
+          "id": "a3e4d047882e4fadb2402c8f9f4928a7",
+          "stepType": "LinkOutput",
+          "name": "Careers",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://www.wwt.com/about/careers"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": "",
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Thank you for your interest in World Wide Technology. Please visit our Career site and  search our openings.  You can filter the list, select a job, and apply for the position. The application will be sent to our Human Resources Department for consideration."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "vaInputs.new_or_existing_inquiry=All Openings",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        },
+        "78f2938953f34db8b4d973f30c48471c": {
+          "stepType": "ChoicePrompt",
+          "name": "New or Existing Inquiry",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Which are you looking for?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "21bd738a2bfc4eabb185bf5693b0c231",
+          "id": "78f2938953f34db8b4d973f30c48471c",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "5c1b054e3f804fb0a39c59e4f15ed7d8": {
+          "id": "5c1b054e3f804fb0a39c59e4f15ed7d8",
+          "stepType": "LinkOutput",
+          "name": "Application Status",
+          "url": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "https://recruiting.adp.com/srccar/public/RTI.home?appUI=true&amp;c=2166501&amp;d=WWTExternalCareerSite#"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "label": {
+            "value": "",
+            "mode": "simple"
+          },
+          "header": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Login to ADP to check your application status."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "vaInputs.new_or_existing_inquiry=Check Application Status",
+            "mode": "query"
+          },
+          "linkType": "single",
+          "introMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "listOfLinks": ""
+        }
+      },
+      "edges": [
+        {
+          "id": "7155814f23824e0385830b6174793613",
+          "edgeType": "Edge",
+          "source": "74f43cca1368437783584bef6995484e",
+          "target": "78f2938953f34db8b4d973f30c48471c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "bcb82d581d86461c979f14e90b23a909",
+          "edgeType": "Edge",
+          "source": "78f2938953f34db8b4d973f30c48471c",
+          "target": "a3e4d047882e4fadb2402c8f9f4928a7",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "a940b7fab11c472eb36bd025cf3badc1",
+          "edgeType": "Edge",
+          "source": "a3e4d047882e4fadb2402c8f9f4928a7",
+          "target": "5c1b054e3f804fb0a39c59e4f15ed7d8",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "36c69723e3e24f30b26237b7c9905e0e",
+          "edgeType": "Edge",
+          "source": "5c1b054e3f804fb0a39c59e4f15ed7d8",
+          "target": "27f0003913944cb1aa4baef97d108dcb",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "21bd738a2bfc4eabb185bf5693b0c231": {
+      "id": "21bd738a2bfc4eabb185bf5693b0c231",
+      "name": "new_or_existing_inquiry",
+      "label": "New Or Existing Inquiry",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "All Openings",
+          "value": "All Openings"
+        },
+        {
+          "label": "Check Application Status",
+          "value": "Check Application Status",
+          "checked": true
+        }
+      ],
+      "category": "vaInputs"
+    }
+  }
+}</graph>
+        <key_phrases>Careers,job opportunity,application,opening,career</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Careers</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-07 16:47:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8704aad72f3801108987bac62799b686</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Careers</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_topic_8704aad72f3801108987bac62799b686</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-07 17:04:40</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=8704aad72f3801108987bac62799b686"/>
+</record_update>
